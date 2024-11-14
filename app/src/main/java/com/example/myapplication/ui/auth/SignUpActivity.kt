@@ -41,6 +41,7 @@ class SignUpActivity : AppCompatActivity() {
 
         signUpButton.setOnClickListener {
             print("button clicked")
+            Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show()
             // Retrieve input values
             val firstNameInput = firstName.text.toString().trim()
             val lastNameInput = lastName.text.toString().trim()
