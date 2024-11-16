@@ -162,6 +162,7 @@
         app:layout_constraintTop_toBottomOf="@id/username_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:endIconMode="password_toggle"
         > <!-- Use appropriate password icon -->
 
         <com.google.android.material.textfield.TextInputEditText
@@ -171,12 +172,13 @@
             android:hint="@string/password"
             android:background="@drawable/rounded_edges_textfield"
             android:padding="12dp"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Sign Up Button -->
     <Button
-        android:id="@+id/signupButton"
+        android:id="@+id/signUp_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/sign_up_button"
@@ -197,10 +199,9 @@
         android:textColor="#0F0E0E"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/signupButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signupButton"
-        />
+        app:layout_constraintTop_toBottomOf="@id/signUp_button" />
+
 
     <!-- TextView for 'Login' -->
     <TextView

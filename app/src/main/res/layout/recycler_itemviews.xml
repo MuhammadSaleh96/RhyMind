@@ -14,6 +14,12 @@
         android:padding="12dp"
         android:background="?android:attr/selectableItemBackground">
 
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_logo"
+            android:contentDescription="event location image"/>
         <TextView
             android:id="@+id/eventTitle"
             android:layout_width="wrap_content"
